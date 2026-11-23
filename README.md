@@ -3,10 +3,18 @@
 A responsive, static company website based on the two supplied 2026 Clemotex company profiles.
 
 ## Run locally
-1. Extract this ZIP.
-2. Open `index.html` in a modern browser.
+1. Run `npm start`.
+2. Open `http://localhost:3000`.
 
-No build tools or backend are required.
+No build step or backend is required.
+
+## Deploy to Railway
+1. Push this project to GitHub.
+2. In Railway, create a new project from the GitHub repository.
+3. Railway will detect Node.js and use `npm start`.
+4. The included `railway.json` enables the `/health` health check.
+
+Set `PORT` automatically through Railway; no manual environment variable is required.
 
 ## Included
 - Responsive homepage and navigation
