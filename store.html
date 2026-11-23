@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Clemotex fuel tanks and fabricated products. Add products to your quote list and request pricing.">
+  <title>Product Store | Clemotex Engineering Limited</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="store.css">
+</head>
+<body class="store-page">
+  <a class="skip-link" href="#main-content">Skip to products</a>
+  <div class="topbar"><div class="container topbar-inner"><span>Construction • Civil Engineering • Infrastructure</span><div><a href="tel:+260978244157">+260 978 244 157</a><span class="top-sep">|</span><a href="mailto:clemotex.engineering@gmail.com">clemotex.engineering@gmail.com</a></div></div></div>
+  <header class="header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Clemotex home"><span class="brand-mark"><i></i><b></b><em></em></span><span class="brand-name">CLEMO<span>TEX</span><small>ENGINEERING LIMITED</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a><a href="index.html#services">Services</a><a class="active" href="store.html" aria-current="page">Store</a><a href="index.html#projects">Projects</a><a href="index.html#contact">Contact</a>
+        <button class="cart-button nav-cta" type="button" data-open-cart>Quote list <span class="cart-count" aria-live="polite">0</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="store-hero">
+      <div class="container store-hero-inner">
+        <div>
+          <div class="eyebrow"><span></span> CLEMOTEX PRODUCT STORE</div>
+          <h1>Find the right fit<br>for your <span>next project.</span></h1>
+          <p>Browse tanks and fabricated products, then send us your requirements for a tailored quote.</p>
+        </div>
+        <div class="store-hero-aside"><b>Made to order</b><span>Sizes and specifications confirmed with our team before purchase.</span></div>
+      </div>
+    </section>
+
+    <section class="store-content" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="store-breadcrumb"><a href="index.html">Home</a><span>/</span><span>Product store</span></div>
+        <div class="catalog-heading">
+          <div><p class="kicker">Browse our range</p><h2 id="catalog-title">Products</h2></div>
+          <p>All products are quoted to order. Select your items and tell us what you need.</p>
+        </div>
+        <div class="catalog-toolbar">
+          <div class="category-filters" role="group" aria-label="Filter products">
+            <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All products</button>
+            <button type="button" class="filter-button" data-filter="tanks" aria-pressed="false">Tanks</button>
+            <button type="button" class="filter-button" data-filter="fabrication" aria-pressed="false">Fabrication</button>
+          </div>
+          <div class="catalog-controls">
+            <label class="search-field"><span class="sr-only">Search products</span><input id="product-search" type="search" placeholder="Search products" autocomplete="off"><span aria-hidden="true">⌕</span></label>
+            <label class="sort-field"><span class="sr-only">Sort products</span><select id="product-sort"><option value="featured">Featured</option><option value="name">Name: A to Z</option></select></label>
+          </div>
+        </div>
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+
+        <div class="store-grid" id="store-grid">
+          <article class="store-card" data-id="fuel-tank" data-category="tanks" data-name="500-gallon double-wall fuel tank" data-description="Green 500-gallon double-wall steel tank shown with a pump package. Confirm configuration, availability and pricing with our team." data-image="assets/500%20Gallon%20Double%20Wall%20powder%20coated%20steel%20tank%20with%20115%20volt%2015%20GPM%20Fill-Rite%20Pump%20package%20%244000_.jpeg" data-image-alt="Green 500-gallon double-wall steel fuel tank with pump package">
+            <div class="store-card-image"><img src="assets/500%20Gallon%20Double%20Wall%20powder%20coated%20steel%20tank%20with%20115%20volt%2015%20GPM%20Fill-Rite%20Pump%20package%20%244000_.jpeg" alt="Green 500-gallon double-wall steel fuel tank with pump package" loading="lazy"><span class="product-badge">500 GALLON · DOUBLE WALL</span></div>
+            <div class="store-card-body"><p class="product-category">FUEL TANKS</p><h3>500-gallon double-wall fuel tank</h3><p class="card-description">Example shown with pump package. Confirm configuration, availability and price with our team.</p><div class="card-meta"><span>Capacity: <b>500 gallons</b></span><span class="quote-price">Price on request</span></div>
+              <label class="card-size">Configuration<select class="product-size"><option>Tank with pump package</option><option>Tank only</option><option>Discuss options</option></select></label>
+              <details class="tank-specifications">
+                <summary>Add capacity &amp; dimensions</summary>
+                <div class="tank-spec-fields">
+                  <label>Capacity<input class="tank-capacity" type="number" min="0.01" step="any" inputmode="decimal" placeholder="e.g. 500"></label>
+                  <label>Capacity unit<select class="tank-capacity-unit"><option>Litres (L)</option><option>US gallons (US gal)</option><option>Imperial gallons (Imp gal)</option></select></label>
+                  <div class="tank-dimensions">
+                    <label>Length<input class="tank-length" type="number" min="0.01" step="any" inputmode="decimal" placeholder="Length"></label>
+                    <label>Width<input class="tank-width" type="number" min="0.01" step="any" inputmode="decimal" placeholder="Width"></label>
+                    <label>Height<input class="tank-height" type="number" min="0.01" step="any" inputmode="decimal" placeholder="Height"></label>
+                  </div>
+                  <label>Dimension unit<select class="tank-dimension-unit"><option>mm</option><option>cm</option><option>m</option><option>ft</option></select></label>
+                  <label>Orientation<select class="tank-orientation"><option>No preference</option><option>Horizontal</option><option>Vertical</option></select></label>
+                </div>
+              </details>
+              <button type="button" class="add-to-quote"><span>Add to quote list</span><b aria-hidden="true">+</b></button>
+            </div>
+          </article>
+          <article class="store-card" data-id="above-ground-tank" data-category="tanks" data-name="Above-ground storage tank" data-description="Above-ground tank fabricated to your required capacity, site and application." data-image="assets/outdoor-fuel-tank.jpg" data-image-alt="Outdoor horizontal storage tank">
+            <div class="store-card-image"><img src="assets/outdoor-fuel-tank.jpg" alt="Illustrative outdoor horizontal storage tank" loading="lazy"><span class="product-badge">QUOTE TO ORDER</span><a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Outdoor_fuel_tank.jpg" target="_blank" rel="noopener">Illustrative photo · W. Carter · CC BY-SA 4.0</a></div>
+            <div class="store-card-body"><p class="product-category">TANKS</p><h3>Above-ground storage tank</h3><p class="card-description">Discuss capacity, access, fittings and placement with our team.</p><div class="card-meta"><span>Size: <b>Made to order</b></span><span class="quote-price">Price on request</span></div>
+              <label class="card-size">Size preference<select class="product-size"><option>Small</option><option>Medium</option><option>Large</option><option>Custom capacity</option></select></label>
+              <details class="tank-specifications">
+                <summary>Add capacity &amp; dimensions</summary>
+                <div class="tank-spec-fields">
+                  <label>Capacity<input class="tank-capacity" type="number" min="0.01" step="any" inputmode="decimal" placeholder="e.g. 500"></label>
+                  <label>Capacity unit<select class="tank-capacity-unit"><option>Litres (L)</option><option>US gallons (US gal)</option><option>Imperial gallons (Imp gal)</option></select></label>
+                  <div class="tank-dimensions">
+                    <label>Length<input class="tank-length" type="number" min="0.01" step="any" inputmode="decimal" placeholder="Length"></label>
+                    <label>Width<input class="tank-width" type="number" min="0.01" step="any" inputmode="decimal" placeholder="Width"></label>
+                    <label>Height<input class="tank-height" type="number" min="0.01" step="any" inputmode="decimal" placeholder="Height"></label>
+                  </div>
+                  <label>Dimension unit<select class="tank-dimension-unit"><option>mm</option><option>cm</option><option>m</option><option>ft</option></select></label>
+                  <label>Orientation<select class="tank-orientation"><option>No preference</option><option>Horizontal</option><option>Vertical</option></select></label>
+                </div>
+              </details>
+              <button type="button" class="add-to-quote"><span>Add to quote list</span><b aria-hidden="true">+</b></button>
+            </div>
+          </article>
+          <article class="store-card fabrication-card" data-id="custom-storage" data-category="tanks" data-name="Custom storage tank" data-description="Custom storage tank sized and configured to discuss with the Clemotex team." data-image-alt="Illustration of a custom storage tank">
+            <div class="store-card-image tank-illustration" aria-hidden="true"><div class="tank-shape"><i></i><b></b></div><span class="product-badge">BUILT TO SPEC</span></div>
+            <div class="store-card-body"><p class="product-category">TANKS</p><h3>Custom storage tank</h3><p class="card-description">A tailored tank solution based on your project requirements.</p><div class="card-meta"><span>Size: <b>Made to order</b></span><span class="quote-price">Price on request</span></div>
+              <label class="card-size">Size preference<select class="product-size"><option>Small</option><option>Medium</option><option>Large</option><option>Custom capacity</option></select></label>
+              <details class="tank-specifications">
+                <summary>Add capacity &amp; dimensions</summary>
+                <div class="tank-spec-fields">
+                  <label>Capacity<input class="tank-capacity" type="number" min="0.01" step="any" inputmode="decimal" placeholder="e.g. 500"></label>
+                  <label>Capacity unit<select class="tank-capacity-unit"><option>Litres (L)</option><option>US gallons (US gal)</option><option>Imperial gallons (Imp gal)</option></select></label>
+                  <div class="tank-dimensions">
+                    <label>Length<input class="tank-length" type="number" min="0.01" step="any" inputmode="decimal" placeholder="Length"></label>
+                    <label>Width<input class="tank-width" type="number" min="0.01" step="any" inputmode="decimal" placeholder="Width"></label>
+                    <label>Height<input class="tank-height" type="number" min="0.01" step="any" inputmode="decimal" placeholder="Height"></label>
+                  </div>
+                  <label>Dimension unit<select class="tank-dimension-unit"><option>mm</option><option>cm</option><option>m</option><option>ft</option></select></label>
+                  <label>Orientation<select class="tank-orientation"><option>No preference</option><option>Horizontal</option><option>Vertical</option></select></label>
+                </div>
+              </details>
+              <button type="button" class="add-to-quote"><span>Add to quote list</span><b aria-hidden="true">+</b></button>
+            </div>
+          </article>
+          <article class="store-card fabrication-card" data-id="steel-fabrication" data-category="fabrication" data-name="Steel fabrication" data-description="Custom steel fabrication for industrial, commercial and construction applications." data-image-alt="Illustration of steel fabrication">
+            <div class="store-card-image fabrication-illustration" aria-hidden="true"><div class="steel-beams"><i></i><b></b><em></em></div><span class="product-badge">CUSTOM FABRICATION</span></div>
+            <div class="store-card-body"><p class="product-category">FABRICATION</p><h3>Steel fabrication</h3><p class="card-description">Made-to-spec steel components for construction and industrial use.</p><div class="card-meta"><span>Specification: <b>Custom</b></span><span class="quote-price">Price on request</span></div>
+              <label class="card-size">Specification<select class="product-size"><option>Discuss requirements</option><option>Custom drawings available</option></select></label>
+              <button type="button" class="add-to-quote"><span>Add to quote list</span><b aria-hidden="true">+</b></button>
+            </div>
+          </article>
+        </div>
+        <div class="no-results" id="no-results" hidden><h3>No matching products</h3><p>Try a different search or category.</p></div>
+      </div>
+    </section>
+
+    <section class="store-help"><div class="container store-help-inner"><div><p class="kicker">Need something specific?</p><h2>Tell us what you’re looking for.</h2><p>Share your drawings, capacity, preferred dimensions or project details and our team can help you with the next steps.</p></div><a class="btn btn-red" href="mailto:clemotex.engineering@gmail.com?subject=Product%20enquiry">Talk to our team <b>↗</b></a></div></section>
+  </main>
+
+  <dialog class="quote-dialog" id="quote-dialog" aria-labelledby="quote-title">
+    <div class="dialog-header"><div><p class="kicker">Your selections</p><h2 id="quote-title">Quote list</h2></div><button class="dialog-close" type="button" aria-label="Close quote list" data-close-cart>×</button></div>
+    <div class="quote-empty" id="quote-empty"><p>Your quote list is empty.</p><button class="text-button" type="button" data-close-cart>Continue browsing</button></div>
+    <div class="quote-content" id="quote-content" hidden>
+      <ul class="quote-items" id="quote-items"></ul>
+      <p class="quote-note">Final pricing, specifications and availability will be confirmed by the Clemotex team.</p>
+      <form class="quote-form" id="quote-form">
+        <h3>Where should we send your quote?</h3>
+        <div class="quote-form-row"><label>Name<input name="name" autocomplete="name" required></label><label>Email<input name="email" type="email" autocomplete="email" required></label></div>
+        <div class="quote-form-row"><label>Phone<input name="phone" type="tel" autocomplete="tel"></label><label>Location<input name="location" autocomplete="address-level2" placeholder="Town / country"></label></div>
+        <label>Additional requirements<textarea name="notes" rows="3" placeholder="Capacity, drawings, delivery or installation details"></textarea></label>
+        <button class="btn btn-red quote-submit" type="submit">Prepare quote request <b>↗</b></button>
+        <p class="quote-status" id="quote-status" role="status"></p>
+      </form>
+    </div>
+  </dialog>
+  <div class="dialog-backdrop" hidden></div>
+
+  <footer class="footer"><div class="container footer-top"><a class="brand brand-footer" href="index.html"><span class="brand-mark"><i></i><b></b><em></em></span><span class="brand-name">CLEMO<span>TEX</span><small>ENGINEERING LIMITED</small></span></a><p>Building Excellence, Delivering Quality.</p><a href="#top" class="back-top">BACK TO TOP ↑</a></div><div class="container footer-bottom"><span>© 2026 Clemotex Engineering Limited. All rights reserved.</span><span>Zambia · Kenya</span></div></footer>
+  <script src="store.js"></script>
+</body>
+</html>
